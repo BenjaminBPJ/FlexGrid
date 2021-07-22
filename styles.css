@@ -1,0 +1,102 @@
+@font-face{
+    font-family: 'barlow';
+    src:url('font/Barlow-Regular.ttf');  
+}
+@font-face{
+    font-family: 'fraunces';
+    src:url('font/fraunces.ttf');  
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, nav{
+    list-style: none;
+}
+
+body{
+    font-family: 'barlow';
+    font-weight: lighter;
+}
+
+/* -------------- Realisation du Header -------------- */
+header{
+    display: grid;
+    color: white;
+    text-align: center;
+}
+
+/* banniere */
+.bannier{
+    background-color: #3ebfff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 1em;
+}
+
+.ul-header{
+    display: flex;
+    flex-direction: row;
+    padding-right: 2em;
+}
+
+.li-header{
+    margin: 1em;
+}
+
+/* image "principale" et son texte*/
+.title{
+    font-family: 'fraunces';
+    letter-spacing: 0.2em;
+    font-size: 2em;
+}
+
+.icon-arrow-down{
+    padding-top: 5em;
+    padding-bottom: 10em;
+}
+.text-image-header{
+    background-image: url('images/desktop/image-header.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #3ebfff;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.main-section-without-image{
+    grid-column: 1/-1;
+}
+
+.transform{
+    display: flex;
+    flex-direction: row-reverse;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.cherry{
+    background-image: url('images/desktop/image-graphic-design.jpg');
+}
+
+.orange{
+    background-image: url('images/desktop/image-photography.jpg');
+}
+
+.main-section-with-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
