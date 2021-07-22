@@ -95,9 +95,13 @@ main{
     grid-template-columns: 1fr 1fr;
 }
 
+.stand{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .text-main-without-image{
     font-size: 1.5em;
-    margin: auto;
     padding: 3em;
 }
 
@@ -134,8 +138,17 @@ main{
 .main-section-with-image{
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3em;
+    font-size: 1.5em;
 }
 
+.text-section-with-image{
+    position: relative;
+    top: 70%;
+}
 
 
 
