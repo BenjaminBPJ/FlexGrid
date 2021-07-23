@@ -52,6 +52,7 @@ header{
 
 .li-header{
     margin: 1em;
+    cursor: pointer;
 }
 
 /* image "principale" et son texte*/
@@ -121,6 +122,7 @@ main{
 
 .learn{
     font-weight: bold;
+    cursor: pointer;
 }
 
 .img-transform{
@@ -201,6 +203,51 @@ aside{
 
 .job-testimonials{
     color: #a7a7a7;
+}
+
+/* -------------- Realisation du Footer -------------- */
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.bannier-image-footer{
+    display: flex;
+    flex-basis: 33%;
+    flex-shrink: 1;
+}
+
+.footer-no-image{
+    background-color: #90d4c5;
+    color: #2f7465;
+    text-align: center;
+    padding: 2em;
+}
+
+.footer-title{
+    font-weight:bold;
+    font-size: 2em;
+}
+
+.ul-footer{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.li-footer{
+    padding: 1.5em;
+    cursor: pointer;
+}
+
+.icon-footer{
+    margin-top: 2em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.image-footer{
+    flex-grow: 1;
 }
 
 
