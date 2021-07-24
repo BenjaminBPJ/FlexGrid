@@ -51,8 +51,9 @@ header{
 }
 
 .li-header{
-    margin: 1em;
+    margin: 1.5em;
     cursor: pointer;
+    transition : 0.5s;
 }
 
 /* image "principale" et son texte*/
@@ -117,12 +118,14 @@ main{
 }
 
 .text-main-no-image{
-    padding:1.5em;
+    margin:1.5em;
 }
 
 .learn{
     font-weight: bold;
     cursor: pointer;
+    display: inline;
+    padding: 0;
 }
 
 .img-transform{
@@ -244,5 +247,33 @@ aside{
     cursor: pointer;
 }
 
+/* ----- animation css -----*/
+.white-over:hover{
+    color: white;
+}
 
+.li-header:hover{
+    background-color: #70cfff;
+    border-radius: 25px;
+    padding: 1em;
+}
 
+.learn-yellow{
+    background: linear-gradient(to top, #f4d207 0%, #f4d207 0.3em, transparent 0.4em) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.3s ease-in-out;
+}
+
+.learn-yellow:hover{
+    background-size: 100% 100%;
+}
+
+.learn-red{
+    background: linear-gradient(to top, #fe7563 0%, #fe7563 0.3em, transparent 0.4em) no-repeat;
+    background-size: 0 100%;
+    transition: background-size 0.3s ease-in-out;
+}
+
+.learn-red:hover{
+    background-size: 100% 100%;
+}
