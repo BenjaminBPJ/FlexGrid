@@ -206,15 +206,13 @@ aside{
 }
 
 /* -------------- Realisation du Footer -------------- */
-footer{
-    display: flex;
-    flex-direction: column;
-}
 
 .bannier-image-footer{
     display: flex;
-    flex-basis: 33%;
-    flex-shrink: 1;
+}
+
+.image-footer{
+    width: 25%;
 }
 
 .footer-no-image{
@@ -246,8 +244,5 @@ footer{
     cursor: pointer;
 }
 
-.image-footer{
-    flex-grow: 1;
-}
 
 
