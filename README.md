@@ -17,6 +17,6 @@ Les consignes design sont dans le fichier "style-guide.md" de "consignes challen
 
 Ce projet m'a permis d'améliorer mes compétences en CSS, nottament le responsive design et également d'apprendre FlexGrid. 
 
-On peut voir le résultat final sur la page Gitpage : 
+On peut voir le résultat final sur la page Gitpage : https://benjaminbpj.github.io/FlexGrid/
 
 
