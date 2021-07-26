@@ -67,9 +67,10 @@ header{
     padding-top: 4em;
     padding-bottom: 13em;
 }
+
 .text-image-header{
     background-image: url('images/desktop/image-header.jpg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #3ebfff;
@@ -134,6 +135,7 @@ main{
 
 .cherry{
     background-image: url('images/desktop/image-graphic-design.jpg');
+    background-position: center;
 }
 
 .text-graphic{
@@ -143,6 +145,7 @@ main{
 
 .orange{
     background-image: url('images/desktop/image-photography.jpg');
+    background-position: center;
 }
 
 .text-photo{
@@ -190,6 +193,7 @@ aside{
 .img-testimonials{
     border-radius: 50%;
     margin-bottom: 2em;
+    height: 7em;
 }
 
 .text-aside{
@@ -276,4 +280,34 @@ aside{
 
 .learn-red:hover{
     background-size: 100% 100%;
+}
+
+@media screen and (max-width: 930px){
+    .text-main-without-image{
+        padding: 1.5em;
+    }
+    .text-section-with-image{
+        top: 60%;
+    }
+}
+
+@media screen and (max-width: 780px){
+    body{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .text-image-header{
+        background-image: url('images/mobile/image-header.jpg');
+    }
+    main{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .main-section-without-image{
+        grid-row: repeat(2, 1fr);
+        display: flex;
+        flex-direction: column;
+    }
 }
