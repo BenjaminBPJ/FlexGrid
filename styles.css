@@ -31,9 +31,12 @@ body{
 
 /* -------------- Realisation du Header -------------- */
 header{
-    display: grid;
     color: white;
     text-align: center;
+}
+
+.bar-menu{
+    visibility: hidden;
 }
 
 /* banniere */
@@ -213,7 +216,6 @@ aside{
 }
 
 /* -------------- Realisation du Footer -------------- */
-
 .bannier-image-footer{
     display: flex;
 }
@@ -298,9 +300,32 @@ aside{
 }
 
 @media screen and (max-width: 380px){
+    body{
+        width: 100%;
+    }
+
+    /* Header */
+    .bar-menu{
+        visibility: visible;
+    }
+    .logo-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bannier{
+        flex-direction: column;
+    }
+    .nav-header{
+        visibility: hidden;
+        position: absolute;
+    }
     .text-image-header{
         background-image: url('images/mobile/image-header.jpg');
     }
+    .ul-header{
+        flex-direction: column;
+    }
+    /* Main */
     main{
         grid-template-columns: 100%;
         grid-template-rows: repeat(4, 1fr);
@@ -316,8 +341,18 @@ aside{
     .orange{
         background-image: url('images/mobile/image-photography.jpg');
     }
+
+    /* Aside */
     aside{
         display: flex;
         flex-direction: column;
+    }
+
+    /* Footer */
+    .bannier-image-footer{
+        flex-wrap: wrap;
+    }
+    .image-footer{
+        width: 50%;
     }
 }
