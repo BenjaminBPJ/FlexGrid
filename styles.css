@@ -68,10 +68,9 @@ header{
 
 .text-image-header{
     background-image: url('images/desktop/image-header.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
-    background-color: #3ebfff;
+    background-repeat: no-repeat;
     padding-top: 4em;
 }
 
@@ -297,7 +296,7 @@ aside{
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 635px){
     body{
         width: 100%;
     }
@@ -348,7 +347,6 @@ aside{
     }
     .text-image-header{
         background-image: url('images/mobile/image-header.jpg');
-        background-size: cover;
     }
     /* Main */
     main{
